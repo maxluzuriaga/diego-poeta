@@ -2,9 +2,12 @@
 layout: default
 ---
 
-<div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <h1>PoetaLuzuriaga.com</h1>
+  <h2>Escritos de Diego Luzuriaga</h2>
+  <h2 class="translation">Writings by Diego Luzuriaga</h2>
+
+  <p><small>Contacto <span class="translation">(contact)</span>: <a href="mailto:diego@luzuriaga.com">diego@luzuriaga.com</a></small></p>
 
   <ul class="post-list">
     {% for post in site.posts %}
@@ -20,4 +23,3 @@ layout: default
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-</div>
