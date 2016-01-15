@@ -3,23 +3,23 @@ layout: default
 ---
 
 
-  <h1>PoetaLuzuriaga.com</h1>
-  <h2>Escritos de Diego Luzuriaga</h2>
-  <h2 class="translation">Writings by Diego Luzuriaga</h2>
+<h1>PoetaLuzuriaga.com</h1>
+<h2>Escritos de Diego Luzuriaga</h2>
+<h2 class="translation">Writings by Diego Luzuriaga</h2>
 
-  <p><small>Contacto <span class="translation">(contact)</span>: <a href="mailto:diego@luzuriaga.com">diego@luzuriaga.com</a></small></p>
+<p><small>Contacto <span class="translation">(contact)</span>: <a href="mailto:diego@luzuriaga.com">diego@luzuriaga.com</a></small></p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<div class="row">
+    <div class="col-sm-3">
+        Hello world!
+    </div>
+    <div class="col-sm-3">
+        Hello world!
+    </div>
+    <div class="col-sm-3">
+        Hello world!
+    </div>
+    <div class="col-sm-3">
+        Hello world!
+    </div>
+</div>
