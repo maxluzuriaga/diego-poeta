@@ -14,3 +14,10 @@ markdown: kramdown
 collections:
   poesia:
     output: true
+
+defaults:
+  - scope:
+      path: ""
+      collection: poesia
+    values:
+      layout: poesia

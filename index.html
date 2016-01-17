@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-
-
 <h1>PoetaLuzuriaga.com</h1>
 <h2>Escritos de Diego Luzuriaga</h2>
 <h2 class="translation">Writings by Diego Luzuriaga</h2>
@@ -11,7 +9,26 @@ layout: default
 
 <div class="row">
     <div class="col-sm-3">
-        Hello world!
+        <h3>Poesia</h3>
+        <h3 class="translation">Poetry</h3>
+
+        {% for poesia in site.poesia %}
+            <div class="poesia-section">
+
+                <h4><a href="{{ poesia.url }}">{{ poesia.title }}</a></h4>
+
+                <ol>
+                    {% for poem in poesia.poems %}
+                        <li>
+                            <a href="{{ poesia.url }}#{{ poem.id }}">
+                                {{ poem.title }}<br>
+                                <span class="translation">{{ poem.title_en }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ol>
+            </div>
+        {% endfor %}
     </div>
     <div class="col-sm-3">
         Hello world!
