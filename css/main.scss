@@ -12,6 +12,30 @@ h1, h2, h3, h4 {
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
+
+    &.translation {
+        font-weight: 400;
+    }
+
+    small {
+        // text-transform: none;
+    }
+}
+
+.column h3 {
+    // display: inline-block;
+    width: 200px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-weight: 400;
 }
 
 .translation {

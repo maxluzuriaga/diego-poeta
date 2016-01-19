@@ -1,16 +1,26 @@
 ---
 layout: default
 ---
-<h1>PoetaLuzuriaga.com</h1>
-<h2>Escritos de Diego Luzuriaga</h2>
-<h2 class="translation">Writings by Diego Luzuriaga</h2>
+<h4>PoetaLuzuriaga.com</h4>
+<h1>Escritos de Diego Luzuriaga<br>
+<small class="translation">Writings by Diego Luzuriaga</small></h1>
 
 <p><small>Contacto <span class="translation">(contact)</span>: <a href="mailto:diego@luzuriaga.com">diego@luzuriaga.com</a></small></p>
 
+<p>(Todos los textos reproducidos en este sitio: copyright &copy; Diego Luzuriaga)<br>
+<span class="translation">All texts reproduced here: copyright &copy; Diego Luzuriaga)</span></p>
+
+<div class="row info">
+    <div class="col-sm-8 col-sm-offset-4">
+        <p>Es permitida la reproducción parcial o total de las obras presentadas en este sitio web para uso personal o con fines educativos, siempre que se cite al autor y se respeten los derechos de autor correspondientes.</p>
+        <p><span class="translation">The partial or complete reproduction of the texts showcased in this website is permitted for personal use or for educational purposes, provided the author is cited and the copyrights are respected.</span></p>
+    </div>
+</div>
+
 <div class="row">
-    <div class="col-sm-3">
-        <h3>Poesia</h3>
-        <h3 class="translation">Poetry</h3>
+    <div class="col-sm-6 column">
+        <h3>Poesia<br>
+        <small class="translation">Poetry</small></h3>
 
         {% for poesia in site.poesia %}
             <div class="poesia-section">
@@ -30,13 +40,8 @@ layout: default
             </div>
         {% endfor %}
     </div>
-    <div class="col-sm-3">
-        Hello world!
-    </div>
-    <div class="col-sm-3">
-        Hello world!
-    </div>
-    <div class="col-sm-3">
-        Hello world!
+    <div class="col-sm-6 column">
+        <h3>Canciones<br>
+        <small class="translation">Songs</small></h3>
     </div>
 </div>
