@@ -21,23 +21,11 @@ layout: default
         <h3>Poesia<br>
         <small class="translation">Poetry</small></h3>
 
-        {% for poesia in site.poesia %}
-            <div class="poesia-section">
-
-                <h4><a href="{{ poesia.url }}">{{ poesia.title }}</a></h4>
-
-                <ol>
-                    {% for poem in poesia.poems %}
-                        <li>
-                            <a href="{{ poesia.url }}#{{ poem.id }}">
-                                {{ poem.title }}<br>
-                                <span class="translation">{{ poem.title_en }}</span>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ol>
-            </div>
-        {% endfor %}
+        <ul>
+            {% for poesia in site.poesia %}
+                <li><h4><a href="{{ poesia.url }}">{{ poesia.title }}</a></h4></li>
+            {% endfor %}
+        </ul>
     </div>
     <div class="col-sm-6 column">
         <h3>Canciones<br>

@@ -18,8 +18,15 @@ h1, h2, h3, h4 {
     }
 
     &.site-title {
+        margin-top: 10px;
         text-transform: none;
     }
+}
+
+.issuuembed {
+    width: 100%;
+    height: 610px;
+    margin: 0 auto;
 }
 
 .column h3 {

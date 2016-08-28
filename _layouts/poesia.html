@@ -5,6 +5,20 @@ layout: default
 <h1>{{ page.title }}</h1>
 <p>&copy;Diego Luzuriaga</p>
 
-<div class="poesia-content">
+{% if page.poems %}
+    <div class="row">
+        <div class="col-md-3">
+            <ol>
+                {% for poem in page.poems %}
+                    <li>
+                        <a href="#{{ poem.id }}">
+                            {{ poem.title }}<br>
+                            <span class="translation">{{ poem.title_en }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ol>
+        </div>
+{% endif %}
+
     {{ content }}
-</div>
