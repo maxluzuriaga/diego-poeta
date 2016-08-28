@@ -23,7 +23,7 @@ layout: default
 
         <ul>
             {% for poesia in site.poesia %}
-                <li><h4><a href="{{ poesia.url }}">{{ poesia.title }}</a></h4></li>
+                <li><h4><a href="{{ poesia.url }}">{{ poesia.title }} ({{ poesia.year }})</a></h4></li>
             {% endfor %}
         </ul>
     </div>
