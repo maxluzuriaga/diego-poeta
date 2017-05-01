@@ -23,6 +23,10 @@ h1, h2, h3, h4 {
     }
 }
 
+h1 em {
+    text-transform: none;
+}
+
 .issuuembed {
     width: 100%;
     height: 610px;
